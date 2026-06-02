@@ -15,6 +15,54 @@
 #define USER 20
 #define PASSWORD 20
 
+
+typedef enum {
+    IZLAZ = 0,
+    OPCIJE_KLIJENATA = 1,
+    OPCIJE_VOZILA,
+    OPCIJE_POPRAVAKA,
+    ODJAVA_ADMINA
+} GlavniIzbornik;
+
+typedef enum {
+    REGISTRACIJA_ADMINA = 1,
+    PRIJAVA_ADMINA,
+    IZLAZ_PROGRAMA
+} PocetniIzbornik;
+
+typedef enum {
+    POVRATAK_KLIJENTI = 0,
+    NOVI_KLIJENT = 1,
+    ISPISI_KLIJENTE,
+    SORTIRAJ_KLIJENTE,
+    PRETRAZI_KLIJENTA,
+    AZURIRAJ_KLIJENTA,
+    OBRISI_KLIJENTA,
+    OBRISI_DATOTEKU_KLIJENATA
+} KlijentiIzbornik;
+
+typedef enum {
+    POVRATAK_VOZILA = 0,
+    NOVO_VOZILO = 1,
+    ISPISI_VOZILA,
+    POVIJEST_VOZILA,
+    SORTIRAJ_VOZILA,
+    AZURIRAJ_REGISTRACIJU,
+    OBRISI_VOZILO,
+    OBRISI_DATOTEKU_VOZILA
+} VozilaIzbornik;
+
+typedef enum {
+    POVRATAK_POPRAVAKA = 0,
+    NOVI_POPRAVAK = 1,
+    ISPIS_POPRAVAKA,
+    UKUPNI_TROSAK_POPRAVAKA,
+    UKUPNI_TROSAK_GODINA,
+    SORTIRAJ_POPRAVKE,
+    OBRISI_DATOTEKU_POPRAVAKA
+} PopravciIzbornik;
+
+
 extern void prikaziGlavniIzbornik();
 extern void prikaziIzbornikKlijenata();
 extern void prikaziIzbornikVozila();
